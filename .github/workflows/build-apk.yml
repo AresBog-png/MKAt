@@ -17,6 +17,12 @@ jobs:
           java-version: 17
       - name: Install dependencies
         run: npm install
+      - name: Prepare www folder
+        run: |
+          mkdir -p www
+          for f in index.html manifest.webmanifest icon.svg icon-192.png icon-512.png sw.js; do
+            if [ -f "$f" ]; then cp "$f" www/; fi
+          done
       - name: Bundle supabase-js inside the app
         run: |
           cp node_modules/@supabase/supabase-js/dist/umd/supabase.js www/supabase.js
