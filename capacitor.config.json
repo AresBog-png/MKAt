@@ -1,0 +1,7 @@
+{
+  "appId": "com.mkat.app",
+  "appName": "MKAt",
+  "webDir": "www",
+  "backgroundColor": "#0a0a0a",
+  "android": { "allowMixedContent": false }
+}

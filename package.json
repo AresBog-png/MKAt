@@ -1,0 +1,12 @@
+{
+  "name": "mkat",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "6.1.2",
+    "@capacitor/cli": "6.1.2",
+    "@capacitor/core": "6.1.2",
+    "@supabase/supabase-js": "2.45.4",
+    "@capacitor/local-notifications": "6.1.2"
+  }
+}
